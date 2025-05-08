@@ -8,6 +8,8 @@ import {
     UserGroupActiveIcon,
     LiveIcon,
     LiveActiveIcon,
+    FolderIcon,
+    FolderActiveIcon,
 } from '~/components/Icons';
 import SuggestedAccounts from '~/components/SuggestedAccounts';
 import config from '~/config';
@@ -26,6 +28,7 @@ function Sidebar() {
                     activeIcon={<UserGroupActiveIcon />}
                 />
                 <MenuItem title="LIVE" to={config.routes.live} icon={<LiveIcon />} activeIcon={<LiveActiveIcon />} />
+                <MenuItem title="Folder" to={config.routes.folder} icon={<FolderIcon />} activeIcon={<FolderActiveIcon />} />
             </Menu>
 
             <SuggestedAccounts label="Suggested accounts" />
